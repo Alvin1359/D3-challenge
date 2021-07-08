@@ -1,8 +1,7 @@
-// 
+// Setting up chart
 var svgWidth = 960;
 var svgHeight = 500;
 
-// 
 var margin = {
   top: 20,
   right: 40,
@@ -10,7 +9,6 @@ var margin = {
   left: 100
 };
 
-// 
 var width = svgWidth - margin.left - margin.right;
 var height = svgHeight - margin.top - margin.bottom;
 
@@ -26,7 +24,7 @@ var svg = d3
 var chartGroup = svg.append("g")
   .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
-// Initial Params
+// Set initial x axis parameter
 var chosenXAxis = "poverty";
 
 // function used for updating x-scale var upon click on axis label
@@ -112,8 +110,6 @@ d3.csv("../assets/data/data.csv").then(function(healthData, err) {
   // parse data
   healthData.forEach(function(data) {
     data.obesity = +data.obesity;
-    data.smokes = +data.smokes;
-    data.healthcare = +data.healthcare;
     data.poverty = +data.poverty;
     data.age = +data.age;
     data.income = +data.income;
