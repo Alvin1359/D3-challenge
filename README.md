@@ -8,13 +8,12 @@ The data set included with the assignment is based on 2014 ACS 1-year estimates:
 ## Repository Structure
 ```
 project  
-|__ images/                # contains image of final visualisation created
-|
-|__ static/                              
+|__ assets/                              
 |         |_ css/          # contains css styling sheet
 |         |_ data/         # contains data source csv
 |         |_ js/           # contains logic to create interactive scatterplot
-| 
+|
+|__ images/                # contains image of final visualisation created
 |
 |__ index.html             # html file used to render page template
 |
