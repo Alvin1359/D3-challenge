@@ -13,7 +13,7 @@ project
 |__ static/                              
 |         |_ css/          # contains css styling sheet
 |         |_ data/         # contains data source csv
-|         |_ js/           # contains logic to create leaflet visualisation
+|         |_ js/           # contains logic to create interactive scatterplot
 | 
 |
 |__ index.html             # html file used to render page template
